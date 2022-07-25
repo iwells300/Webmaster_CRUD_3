@@ -1,0 +1,67 @@
+
+<div class="contenedor-menu reveal">
+    <div class="menu ">
+        <div class="boton-menu">
+            <a href="/taller">
+            <i class="fa-solid fa-toolbox text-white iconoIndex"></i>
+            <h5 class="h5 display-5 text-white ">Service</h5>
+            <p class="text-white">Programa tu turno</p>
+            </a>
+        </div>
+        <div class="boton-menu">
+            <a href="/taller">
+            <i class="fa-solid fa-handshake-angle text-white iconoIndex"></i>
+            <h5 class="h5 display-5 text-white">Posventa</h5>
+            <p class="text-white">Accesorios y servicios</p>
+            </a>
+        </div>
+        <div class="boton-menu">
+            <a href="/modelos">
+            <i class="fa-solid fa-hand-holding-dollar text-white iconoIndex"></i>
+            <h5 class="h5 display-5 text-white">Financiación</h5>
+            <p class="text-white">Conoce tu plan</p>
+            </a>
+        </div>
+        <div class="boton-menu">
+            <a href="/contacto">
+            <i class="fa-solid fa-car-side text-white iconoIndex"></i>
+            <h5 class="h5 display-5 text-white">Quiero mi auto</h5>
+            <p class="text-white">Contactanos</p>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="contenedor--tarjetas ">
+
+{{#each novedades}}
+
+<div class="tarjeta--novedad reveal" style="">
+    <div class="col-12 text-end">
+        <span class="badge bg-secondary bg-lg">{{subtitulo}}</span>          
+    </div>                 
+    <h4 class="display-5 text-dark p-3">{{titulo}}</h4>
+                        
+                  
+
+
+    <p> {{cuerpo}}</p>
+
+    <div class="col-12 text-end">
+        {{#if boton}}
+        
+        <a href="" class="btn btn-dark btn-lg">ver mas!</a>
+        {{/if}}
+    </div>
+</div>
+
+{{/each}}
+</div>
+
+
+<script src="JavaScriptS1/efectos.js">
+
+</script>

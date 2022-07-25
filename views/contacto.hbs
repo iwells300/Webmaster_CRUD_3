@@ -1,0 +1,86 @@
+        <section class="contacto" id="contacto">
+          <div>
+            <h4 class="display-5">Contacto</h4>
+          </div>
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check provincia bs" name="radioProvincia" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="btnradio1">Buenos Aires</label>          
+            <input type="radio" class="btn-check provincia mdz" name="radioProvincia" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-dark" for="btnradio2">Mendoza</label>
+            <input type="radio" class="btn-check provincia sla" name="radioProvincia" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-dark" for="btnradio3">Salta</label>
+          </div>
+          <div class="contenedor-mapa">
+              <div class="contacto-mapa">
+                <div id="map"></div>
+              </div> 
+              <div class="contacto-texto">
+                <div class="contacto-texto-div1">
+                  <div>
+                    <h5 class="display-6 pt-4 text-white">Dirección</h5>
+                    <p id="direccion">Av. Centenario 1480</p>
+                  </div>
+                  <div>
+                    <h5 class="display-6 pt-4 text-white">Horarios</h5>
+                    <p>Lunes a Sábados de 9 a 18:30 hs</p>
+                  </div>
+                  <div>
+                    <h5 class="display-6 pt-4 text-white">Telefono</h5>
+                    <p id="telefono">+54 (011) 4469-4755</p>
+                  </div>
+                  <div>
+                    <h5 class="display-6 pt-4 text-white">Email</h5>
+                    <p id="email">silver-central@info.com</p>
+                  </div>
+                </div>
+                <div class="contacto-texto-div2">
+                  <a href="https://wa.me/542215975565"><i class="fa-brands fa-whatsapp redes"></i></a>
+                  <a href="https://es-la.facebook.com/fordargentina/"><i class="fa-brands fa-facebook-square redes"></i></a>
+                  <a href="https://www.instagram.com/fordargentina/?hl=es"><i class="fa-brands fa-instagram redes"></i></a>
+                </div>
+              </div>
+          </div>
+          <div class="contenedor-formulario">
+            <div class="contacto-foto">
+              <div class="contacto-img" style="background-image: url('/ImagenesS1/concesionarioBs.jpg')"></div>
+            </div>
+            <form action="/contacto" class="contacto-form" method="post">
+              <h5 class="display-6 pt-3 text-white">Contactenos</h5>
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" name="nombre">
+              <label for="mail">Email</label>
+              <input type="mail" name="email">
+              <label for="mail">Mensaje</label>
+              <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+              <button type="submit" class="btn btn-dark submit" data-toggle="modal" data-target="#ventanaConfirmacion">Enviar</button>
+            </form> 
+            
+          </div>         
+        </section>
+        <div class="modal fade" id="ventanaConfirmacion" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="tituloVentana">{{message}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Gracias por contactarse con nosotros. <br>En breve nos comunicaremos con usted.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>  
+        <script src="JavaScriptS1/mapa.js"></script>
+        <script>
+          document.getElementById('contacto').scrollIntoView(); 
+        </script> 
+             

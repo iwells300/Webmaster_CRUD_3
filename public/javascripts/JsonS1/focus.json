@@ -1,0 +1,38 @@
+
+{
+  "modelo" : "Focus",
+  "tipoD3" : "items",
+  "urlD1":"",
+  "urlD2":"",
+  "tarjetasD3":[{
+    "titulo":"FABRICADO EN ARGENTINA.","contenido":"Plataforma Global fabricada en la planta Ford General Pacheco para el resto del Mercosur."
+  },
+  {
+    "titulo":"KINETIC DESIGN ATTRACTION.","contenido":"Representante de la evolución dinámica del Kinetic Design exterior e interior para ambas carrocerías."
+  },
+  {
+    "titulo":"LÍDER INDISCUTIDO EN TECNOLOGÍAS DE ASISTENCIA AL CONDUCTOR.","contenido":"Estacionamiento asistido paralelo y perpendicular con sistema Pull Out, Sistema de Conectividad SYNC®, Programación de llaves MyKey son algunos ejemplos de la tecnología como aliada del conductor."
+  },
+  {
+    "titulo":"ÚNICO EN SU SEGMENTO CON ACTIVE CITY STOP (SISTEMA DE FRENADO AUTOMÁTICO EN CIUDAD).","contenido":"En caso de detectar una posible colisión, los frenos se activan para evitar o disminuir un posible impacto."
+  },
+  {
+    "titulo":"SENSACIÓN DE MANEJO ADICTIVA.","contenido":"El Focus fue especialmente pensado para brindar una excelente maniobrabilidad en todo tipo de caminos."
+  },
+  {
+    "titulo":"MOTORES POTENTES Y EFICIENTES.","contenido":"Con un motor 1.6 litros Sigma de 125 caballos de fuerza y un motor 2.0 litros Duratec GDI con inyección directa y 170 caballos, el Focus incorpora el sistema Ti- VCT (apertura variable de válvulas) en toda la línea."
+  },
+  {
+    "titulo":"TRANSMISIÓN POWERSHIFT SECUENCIAL DE 6 VELOCIDADES CON LEVAS AL VOLANTE.","contenido":"La combinación de doble embrague robotizado y levas de cambio al volante dan como resultado una excelente respuesta y cambios de velocidad rápidos, precisos e intuitivos."
+  },
+  {
+    "titulo":"3 AÑOS DE GARANTÍA.","contenido":"El Focus ofrece una garantía transferible de 3 años o 100.000 kilómetros en todos sus catálogos."
+  },
+  {
+    "titulo":"SEGURIDAD ACTIVA Y PASIVA.","contenido":"Controles Electrónicos de Estabilidad (ESC) y Tracción (TCS), Distribución de la fuerza de frenado (EBD) y Control de Torque en Curvas (TVC) combinados con 6 airbags y carrocería con refuerzos ultrarrígidos otorgan al Focus 5 estrellas LatinNCAP."
+  },
+  {
+    "titulo":"FAROS INTELIGENTES.","contenido":"Con tecnología Bi-xenón y LED, se adaptan a las condiciones del camino y a la velocidad de circulación."
+  }
+  ]
+}

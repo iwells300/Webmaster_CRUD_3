@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/208376c1ca.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="CssS1/normalize.css" type="text/css">
+    <link rel="stylesheet" href="CssS1/style10.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <link rel="icon" href="ImagenesS1/logo.ico">
+    <title>Silver Concesionario oficial - {{title}}</title>
+  </head>
+  <body>
+    <header id="principal">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">                
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand display-6" href="/">
+                            <img src="ImagenesS1/logo.png" alt=""  height="30" class="d-inline-block align-text-top">
+                            Silver concesionario oficial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark {{#if isNosotros}}active{{/if}}" href="/nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark {{#if isModelos}}active{{/if}}" href="/modelos">Nuestros modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark {{#if isTaller}}active{{/if}}" href="/taller">Area Taller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark {{#if isContacto}}active{{/if}}" href="/contacto">Contacto</a>
+                    </li>
+                  </ul>
+            </div>
+          </nav>          
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <figure class="filter">  
+                <img src="/ImagenesS1/fiesta.jpg" class="d-block w-100 img-fondo" alt="...">
+                </figure>
+                <div class="titulo-arriba">
+                    <h2 class="display-1">Fiesta</h2> 
+                    <p class="display-6">Diseño, tecnologia y versatilidad</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <figure class="filter">
+                <img src="/ImagenesS1/focus.jpg" class="d-block w-100 img-fondo" alt="...">
+                </figure>
+                <div class="titulo-abajo">
+                <h2 class="display-1">Focus</h2> 
+                <p class="display-6">Dinamismo, personalidad y sofisticación</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <figure class="filter">
+                <img src="/ImagenesS1/mustang.jpg" class="d-block w-100 img-fondo" alt="...">
+                </figure>  
+                <div class="titulo-arriba">
+                    <h2 class="display-1">Mustang</h2> 
+                    <p class="display-6">Rendimiento sin igual
+                        con la mayor potencia</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <figure class="filter">
+                <img src="/ImagenesS1/ecosport.jpg" class="d-block w-100 img-fondo" alt="...">
+                </figure>
+                <div class="titulo-abajo">
+                    <h2 class="display-1">Ecosport</h2> 
+                    <p class="display-6">Creada para transformar
+                        tu imaginación en acción</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <figure class="filter">
+                <img src="/ImagenesS1/f150.jpg" class="d-block w-100 img-fondo" alt="...">
+                </figure>
+                <div class="titulo-arriba">
+                <h2 class="display-1">Ford 150</h2> 
+                <p class="display-6">La pick-up más reconocida a nivel mundial</p>
+                </div> 
+              </div>              
+            </div>
+            <button class="carousel-control-prev boton" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next boton" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+    </header>
+    <main>
+    {{{body}}}
+    </main>
+
+    <footer>
+      <section>        
+        <div class="footer--0">
+          <img src="ImagenesS1/logo.png" alt=""  height="30" class="d-inline-block align-text-top">
+          <h5 class="display-6 text-white">Silver</h5>
+          <p class="text-white">Concesionario oficial</p>
+        </div>
+        <div class="footer--1">
+          <div>
+            <p>Sucursal Buenos Aires</p>
+            <p>Av. Centenario 1480</p>
+            <p>011-4469-4755</p>
+          </div>
+          <div>
+            <p>Sucursal Mendoza</p>
+            <p>Patricias Mendocinas 1062</p>
+            <p>+54 (0261) 487-4753</p>
+          </div>
+          <div>
+            <p>Sucursal Salta</p>
+            <p>O'Higgins 937</p>
+            <p>+54 (0387) 431 1568</p>
+          </div>
+        </div>
+        <div class="footer--2">          
+          <a href="/" class="text-secondary">Principal</a>        
+          <a href="/nosotros" class="text-secondary">Nosotros</a>        
+          <a href="/modelos" class="text-secondary">Nuestros modelos</a>       
+          <a href="/taller" class="text-secondary">Area Taller</a>        
+          <a href="/contacto" class="text-secondary">Contacto</a>
+          <a href="/admin/login" class="text-secondary">Administración</a>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      
+    <script src="JavaScriptS1/nmodelos.js"></script>
+    
+    
+    
+  </body>
+</html>

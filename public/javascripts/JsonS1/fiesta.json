@@ -1,0 +1,37 @@
+
+{
+  "modelo" : "Fiesta",
+  "tipoD3" : "modelos",
+  "tarjetasD3":[{
+    "titulo":"SE PLUS","contenido":["Control electrónico de estabilidad (ESC)",	"Asistencia de arranque en pendiente (HLA)",	"Sistema antibloqueo de frenos ABS con EBD",	"Dirección eléctrica (EPAS)",	"2 Airbags",	"Sistema de anclaje ISOFIX para sillas de bebé",	"Sistema inmovilizador de motor “Secury Lock”",	"Alarma volumétrica",	"Apertura y cierre de puertas y baúl con comando a distancia",	"Cierre automático de puertas a 20km/h",	"Alfombras delanteras y traseras",	"Levantacristales eléctricos delanteros y traseros con sistema “One touch”"]
+  },
+  {
+    "titulo":"SE MT","contenido":["Agrega a la versión S Plus:",	"SYNC 3 con pantalla multitáctil de 6.5“ con compatibilidad con AppleCarPlay8® y Adroid Auto®",	"My Key®",	"Control de velocidad crucero",	"Llantas de aleación de 16",	"Faros antiniebla delanteros",	"Volante forrado en cuero"]
+    
+  },
+  {
+    "titulo":"SE AT","contenido":["Agrega a la versión SE MT:",	"Caja automática de 6 velocidades"]
+  },
+  {
+    "titulo":"SE PLUS MT","contenido":["Agrega a la versión SE MT:",	"Cámara de estacionamiento trasera",	"Sensores de estacionamiento trasero",	"Climatizador automático"]
+  },
+  {
+    "titulo":"SE PLUS AT","contenido":["Agrega a la versión SE Plus:",	"Caja automática de 6 velocidades"]
+  },
+  {
+    "titulo":"TITANIUM MT","contenido":["7 airbags","Luces diurnas delanteras y traseras LED","Airbag de rodilla para el conductor",
+      "Airbags laterales tipo Cortina",
+      "Airbags laterales de tórax en asientos delanteros",
+      "Sensor de lluvia",
+      "Sensor crepuscular",
+      "Sistema de apertura de puerta sin llave “Keyless”",
+      "Sistema de arranque sin llave “Ford Power”",
+      "Tapizado de asientos de cuero",
+      "Navegador satelital integrado"      
+    ]
+  },
+  {
+    "titulo":"TITANIUM AT","contenido":["Agrega a la versión TITANIUM MT:",	"Caja automática de 6 velocidades"]
+  }
+  ]
+}

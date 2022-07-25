@@ -1,0 +1,37 @@
+        <section class="taller" id="taller">
+          <div class="taller--fondo"></div>
+          <div class="taller--div">
+            <div class="taller--text">
+              <h4 class="display-5 text-white">Area Taller</h4>
+              <div>
+                <i class="fa-solid fa-car icono--taller" ></i>
+                <i class="fa-solid fa-wrench icono--taller"></i>
+                <i class="fa-solid fa-screwdriver icono--taller"></i>
+              </div>
+              <p class="text-white serviciosTaller">Normal</p>
+              {{#if conocido}}
+              <h5 class="display-5 text-white">Hola {{usuario}}</h5>
+              <div class="taller--usuario">
+                <a href="/salir" >Cerrar sesion</a> 
+              </div>
+              {{/if}}
+              {{#unless conocido}}
+              <form action="/taller" class="taller--form" method="post">
+                <label for="">Usuario</label>
+                <input type="text" name="usuario">
+                <label for="">Contraseña</label>
+                <input type="password" name="passwd">
+                <button type="submit" class="btn btn-dark submit">Iniciar Sesión</button>
+              </form>              
+              <div class="taller--usuario">
+                <a href="" >Registrarse</a> 
+                <a href="" >Olvide mi contraseña</a>
+              </div>
+              {{/unless}}              
+            </div>            
+          </div>
+        </section>
+        <script src="JavaScriptS1/areaTaller.js"></script>
+        <script>
+          document.getElementById('taller').scrollIntoView(); 
+        </script>

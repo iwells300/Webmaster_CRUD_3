@@ -1,0 +1,39 @@
+<div class=" taller adminLogin adminAgregarModificar" id="adminAgregarModificar" >
+    <div class=" adminAgregarModificar">
+        <div class="adminAgregarModificar--div">
+            <h4>Agregar nueva novedad</h4>
+            <form method="post" action="/admin/novedades/agregar" class="adminAgregarModificar--form">
+                <div class="form-group">
+                    <input type="text" placeholder="Titulo" class="form-control" name="titulo">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Subtitulo" class="form-control" name="subtitulo"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Cuerpo" class="form-control" name="cuerpo" style="height:30vh ;"></textarea>
+                </div>
+                <div class="form-group">
+                    <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="boton">  
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Colocar boton de acción
+                    </label>      
+                </div>
+                   
+                <div class="col-12 text-center">
+                <button type="submit" class="btn btn-outline-primary btn-lg">Agregar</button>
+
+                </div>
+                {{#if error}}
+                    <h5>{{message}}</h5>
+                {{/if}}
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+          document.getElementById('adminAgregarModificar').scrollIntoView(); 
+</script>

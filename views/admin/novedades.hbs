@@ -1,0 +1,180 @@
+<section class="adminNovedades adminLogin" id="novedades">
+        <div class="taller--fondo__admin"></div>
+        <div class="taller--div__novedades">
+            <div class="taller--text div__admin__novedades">
+                <h3 class="display-3 text-black" style="text-align: center;"><br>Silver concesionaria</h3>
+                <h4 class="display-5 text-black" style="text-align: center;">{{saludo}} {{usuario}}</h4>
+                <p>Desde esta pagina usted podra administrar los datos de la concesionaria</p>
+
+                <nav>
+                <div class="nav nav-pills flex-column flex-sm-row" role="tablist">                    
+                    {{#if novedadActive}}
+                    <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#tab-novedades" type="button" role="tab" aria-controls="tab-novedades" aria-selected="false">Lista novedades</button>
+                    {{else}}
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#tab-novedades" type="button" role="tab" aria-controls="tab-novedades" aria-selected="false">Lista novedades</button>
+                    {{/if}} 
+
+                    {{#if mensajesActive}}
+                    <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#tab-mensajes" type="button" role="tab" aria-controls="tab-mensajes" aria-selected="false">Mensajes recibidos</button>
+                    {{else}}
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#tab-mensajes" type="button" role="tab" aria-controls="tab-mensajes" aria-selected="false">Mensajes recibidos</button>
+                    {{/if}} 
+                    
+ 
+                </div>
+                </nav>
+
+                <div class="tab-content">
+                {{#if novedadActive}}
+                <div class="tab-pane fade show active" id="tab-novedades">
+                {{else}}
+                <div class="tab-pane fade" id="tab-novedades">
+                {{/if}}   
+                <div class="row container tituloContainer" >
+                    <div class="col-5">
+                        <h3>Novedades</h3>
+                    </div>
+                    
+                    <div class="col-6 text-right">
+                        <form action="" class="d-flex">
+                            <input type="search" class="form-control me-4" placeholder="Buscar" aria-label="Search" name="q"
+                            {{#if q}}
+                             value="{{q}}"
+                            {{/if}}
+                             >
+                            <button class="btn btn-outline-primary" type="submit"
+                            data-toggle="tooltip" data-placement="top" title="Buscar novedad">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <input type="hidden" value="novedades" name="tabSeleccionado">
+                        </form>
+
+                    </div>
+                    <div class="col-1 text-center">
+                        <a href="/admin/novedades/agregar" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="Agregar nueva novedad"><i class="fa fa-plus"></i></a>
+                    </div>
+
+                </div>
+                <div class="row container">
+                    <div class="col">
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark bg-primary">
+                                <tr>
+                                    <th scope="col" class="text-center align-middle">#</th>
+                                    <th scope="col" class="text-center align-middle">Título</th>
+                                    <th scope="col" class="text-center align-middle">Subtitulo</th>
+                                    <th scope="col" class="text-center align-middle">Texto</th>
+                                    <th scope="col" class="text-center align-middle">Incluye boton</th>
+                                    <th scope="col" class="text-center align-middle">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each novedades}}
+                                <tr>
+                                    <th scope="row">{{id}}</th>
+                                    <td>{{titulo}}</td>
+                                    <td>{{subtitulo}}</td>
+                                    <td>{{cuerpo}}</td>
+                                    <td>{{boton}}</td>
+                                    <td class="text-center">
+                                        <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-outline-primary"  data-toggle="tooltip" data-placement="top" title="Editar novedad"> <i class="fa fa-pencil"></i></a>
+                                        <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-outline-primary"  data-toggle="tooltip" data-placement="top" title="Eliminar novedad"> <i class="fa fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+
+                        {{#if is_search}}
+                        {{#unless novedades.length}}
+                        No se encontraron resultados para "<b>{{q}}</b>"
+                        {{/unless}}
+                        {{/if}}
+                    </div>
+
+                </div>
+                </div>
+                {{#if mensajesActive}}
+                <div class="tab-pane fade show active" id="tab-mensajes">
+                {{else}}
+                 <div class="tab-pane fade" id="tab-mensajes">
+                {{/if}} 
+                
+
+                <div class="row container tituloContainer" >
+                    <div class="col-6">
+                        <h3>Mensajes recibidos</h3>
+                    </div>
+                    
+                    <div class="col-6 text-end">
+                        <form action="" class="d-flex">
+                            <input type="search" class="form-control me-4" placeholder="Buscar" aria-label="Search" name="q1"
+                            {{#if q1}}
+                             value="{{q1}}"
+                            {{/if}}
+                             >
+                            <button class="btn btn-outline-primary" type="submit"
+                            data-toggle="tooltip" data-placement="top" title="Buscar mensajes">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                            <input type="hidden" value="mensajes" name="tabSeleccionado">
+                        </form>
+
+                    </div>
+                    
+
+                </div>
+                <div class="row container">
+                    <div class="col">
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark bg-primary">
+                                <tr>
+                                    <th scope="col" class="text-center align-middle">#</th>
+                                    <th scope="col" class="text-center align-middle">Nombre</th>
+                                    <th scope="col" class="text-center align-middle">Email</th>
+                                    <th scope="col" class="text-center align-middle">Mensaje</th>
+                                    <th scope="col" class="text-center align-middle">Fecha enviado</th>
+                                    <th scope="col" class="text-center align-middle">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each mensajes}}
+                                <tr>
+                                    <th scope="row">{{id}}</th>
+                                    <td>{{nombre}}</td>
+                                    <td>{{email}}</td>
+                                    <td>{{mensaje}}</td>
+                                    <td>{{fecha}}</td>
+                                    <td class="text-center">                           
+                                        <a href="/admin/novedades/eliminarMensaje/{{id}}" class="btn btn-sm btn-outline-primary"  data-toggle="tooltip" data-placement="top" title="Eliminar mensaje"> <i class="fa fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+
+                        {{#if is_search1}}
+                            {{#unless mensajes.length}}
+                                No se encontraron resultados para "<b>{{q1}}</b>"
+                            {{/unless}}
+                        {{/if}}
+                    </div>
+
+                </div>
+                </div>
+                
+                </div>
+
+                
+                <p>Usted accedio {{vistas}} {{cantidadVeces}}</p>
+                <p>Ultimo acceso: {{tiempo}}</p>  
+                <a class="btn btn-dark" href="/admin/login/logout">Cerrar sesión</a>
+            </div>
+        </div>
+            
+        
+</section>
+
+<script>
+          document.getElementById('novedades').scrollIntoView(); 
+</script>

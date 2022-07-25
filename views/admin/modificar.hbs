@@ -1,0 +1,45 @@
+<div class="taller adminLogin adminAgregarModificar" id="adminAgregarModificar">
+    <div class="adminAgregarModificar">
+        <div class="adminAgregarModificar--div">
+            <h4>Modificar novedad</h4>
+            <form method="post" action="/admin/novedades/modificar" class="adminAgregarModificar--form">
+                <input type="hidden" value="{{novedad.id}}" name="id">
+                <div class="form-group">
+                    <input type="text" placeholder="Titulo" class="form-control" name="titulo" value="{{novedad.titulo}}">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Subtitulo" class="form-control" name="subtitulo">{{novedad.subtitulo}}</textarea>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Cuerpo" class="form-control" name="cuerpo" style="height:30vh ;">{{novedad.cuerpo}}</textarea>
+                </div>
+                <div class="form-group">
+                    {{#if novedad.boton}}
+                    <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="boton" checked> 
+                    {{else}}
+                    <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" name="boton"> 
+                    {{/if}} 
+
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Boton de acción
+                    </label>              
+                    
+                </div>
+                <div class="col-12 text-center">
+                <button type="submit" class="btn btn-outline-primary btn-lg">Modificar</button>
+                </div>
+
+                {{#if error}}
+                    <h5>{{message}}</h5>
+                {{/if}}
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+          document.getElementById('adminAgregarModificar').scrollIntoView(); 
+</script>

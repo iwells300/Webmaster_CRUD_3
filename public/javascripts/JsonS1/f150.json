@@ -1,0 +1,25 @@
+
+{
+  "modelo" : "Fiesta",
+  "tipoD3" : "modelos",
+  "tarjetasD3":[{
+    "titulo":"ROBUSTEZ","contenido":["Carrocería de aleación de aluminio.",
+      "Está disponible con el legendario motor Ford 5.0L V8 con 400CV & 542Nm de Torque con el Sistema auto start / stop y una caja automática de 10 velocidades.",
+      "Incluye un paquete off-road con el fin de optimizar la conducción todoterreno y hacer frente a los mayores desafíos"
+      ]
+  },
+  {
+    "titulo":"TECNOLOGÍA","contenido":["Un tablero de instrumentos con una pantalla LCD de 8”","Pantalla multitáctil de 8 con SYNC 3, compatible con Apple Car Play & Android Auto, acompañado del sofisticado Bang & Olufsen (B&O) Play Premium audio system con 10 parlantes más subwoofer y navegador satelital integrado (GPS).”","Techo solar panorámico corredizo, con doble panel."
+    ]
+    
+  },
+  {
+    "titulo":"SEGURIDAD","contenido":["Sistema de Información de Punto Ciego (BLIS) con Alerta de Tráfico Cruzado.",
+      "Sistema de Mantenimiento de Carril (Lane Keeping Aid).",
+      "Asistente De Pre-colisión Con Detección De Peatones.",
+      "Cámara Trasera.",
+      "Control Automático de Luces Altas"
+      ]
+  }
+  ]
+}

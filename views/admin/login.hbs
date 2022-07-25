@@ -1,0 +1,34 @@
+<section class="taller adminLogin" id="adminLogin">
+          <div class="taller--fondo__admin"></div>
+          <div class="taller--div__novedades">
+            <div class="taller--text div__admin">
+              <h4 class="display-5 text-white " style="text-align: center;">Area Administración</h4>
+              <div>
+                <div class="icono__admin"></div>
+              </div>
+              
+              
+              
+              
+              <form action="/admin/login" class="taller--form" method="post">
+                <label for="">Usuario</label>
+                <input type="text" name="usuario">
+                <label for="">Contraseña</label>
+                <input type="password" name="passwd">
+                <button type="submit" class="btn btn-dark submit">Iniciar Sesión</button>
+              </form>
+              {{#if error}}
+                <p class="text-white">Usuario o contraseña incorrecto</p>
+              {{/if}}  
+              {{#if finSesion}}
+                <p class="text-white">Sesión cerrada correctamente</p>
+              {{/if}}            
+              
+                           
+            </div>            
+          </div>
+        </section>
+        
+        <script>
+          document.getElementById('adminLogin').scrollIntoView(); 
+        </script>

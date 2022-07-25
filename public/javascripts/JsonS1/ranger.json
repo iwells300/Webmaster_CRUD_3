@@ -1,0 +1,21 @@
+
+{
+  "modelo" : "Ranger",
+  "tipoD3" : "modelos",
+  "urlD1":"",
+  "urlD2":"",
+  "tarjetasD3":[{
+    "titulo":"RAZA FUERTE","contenido":["Chasis reforzado y flexible: la columna vertebral de la robustez y la gran capacidad de la Ranger se encuentra en el chasis reforzado de perfil cerrado de acero de mayor espesor, altamente resistente y flexible a la vez.","Suspensiones: Las mejoras en la suspensión delantera, el marco del chasis reforzado y flexible, sumado a la tecnología de alta gama que equipa la Ranger, hacen de una experiencia única de conducción, brindando confort y seguridad.","3 motores disponibles: Ford Puma 3.2L Diesel 200CV 470Nm de torque 6AT & 6MT, Ford Puma 2.2L Diesel 160CV 385Nm de torque 6AT & 6MT y Duratec 2.5L 166CV 225Nm de torque 5MT","Máxima Capacidad Off-Road con Bloqueo de Diferencial Trasero al 100% y 800 mm de capacidad de vadeo le permiten superar todo tipo de desafíos posibles."]
+  },
+  {
+    "titulo":"TECNOLOGIA","contenido":["Tecnología de un vehículo de alta gama: Ranger presenta un nivel único de tecnología aplicado en materia de seguridad, dentro del segmento. Cuenta con Sistema de Mantenimiento de Carril, Control de Velocidad Crucero Adaptativo, Asistente de Pre-Colisión con detección de peatones y vehículos, y Detector de Fatiga, entre otras características de un vehículo de alta gama. A su vez, la Ranger equipa Dirección Asistida Eléctrica en toda su línea, brindando confort de marcha y mayor seguridad.","Pantalla de 8” multitáctil con Sync 3 compatible con Apple Car Play y Android Auto."]
+  },
+  {
+    "titulo":"SEGURIDAD","contenido":["Máximo Nivel de Seguridad: Control electrónico de estabilidad (ESP), Control de Tracción (TCS), Control Anti-vuelco (ROM) y Control de Carga Adaptativo (LAC), entre otros más, permite a la Ranger brindar el máximo nivel de seguridad a todos los ocupantes."]
+  },
+  {
+    "titulo":"5 AÑOS DE GARANTIA","contenido":["La Ranger ofrece una garantía transferible de 5 años o 150.000 kilómetros en todas sus versiones."]
+  }
+  
+  ]
+}
